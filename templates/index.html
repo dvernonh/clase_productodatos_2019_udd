@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 
-<h2>Sube una imagen</h2>
+<h2>Por favor sube la foto de tu perro</h2>
 
 <div>
     <form id="upload-file" method="post" enctype="multipart/form-data">
@@ -16,7 +16,10 @@
             </div>
         </div>
         <div>
-            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">¡Predecir!</button>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">¡Verificar!</button>
+            <p>El modelo fue entrenado con las 26 razas de perro más conocidas en Chile. Para mayor información sobre el dataset de entrenamiento ingresar a : <a href="https://drive.google.com/drive/folders/1ZD4AN8gKVbvqeBGU-edSKkTIVGuTcdRy?usp=sharing">Dataset</a></p>
+            <p>Creado por: Felipe Salgado Rojas, alumno Magister Data Science.Universidad del Desarrollo</p>
+            <p>Github: <a href="https://github.com/dvernonh/clase_productodatos_2019_udd">Git</a></p>
         </div>
     </div>
 
