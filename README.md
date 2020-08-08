@@ -1,59 +1,50 @@
 
-# Laboratorio: Publicando un modelo de deep learning en Heroku
+# Producto de datos: ¿Quieres saber la raza de tu perro?
 
 
-> Una revisión de todo el camino necesario para publicar nuestro primer Producto de Datos. Ejemplo disponible en https://facemask-udd.herokuapp.com/
+> El principal objetivo de esta app es que, si subes una foto de tu perro el modelo pueda determinar a qué raza pertenece. 
+
+Este modelo de Deep Learning fue entrenado con 26 razas de perro diferentes y más conocidas en Chile (mencionadas más abajo) y si no pertenece a ninguna de ellas, el modelo te entregará la respuesta "Otro".
 
 
-## Antes de empezar
+## ¿Cómo ingreso a la app?
 
-- Para poder realizar este laboratorio se necesita una cuenta en [GitHub](https://www.github.com/) y [Heroku](https://www.heroku.com/). Ambas son gratuitas y les serán muy útiles en el futuro.
-- Se asume que el computador de cada estudiante tiene Python y Jupyter Notebook instalados (requisitos de varios cursos anteriores del programa). Si no es el caso, recomiendo seguir algún tutorial como esta [guía para instalar Jupyter Notebook en Windows 10](https://medium.com/@kswalawage/install-python-and-jupyter-notebook-to-windows-10-64-bit-66db782e1d02).
+Para ingresar a la app solamente debes ingresa al siguiente link: [clasificador_perros](https://razasdeperro.herokuapp.com/)
 
-## Instalación de librerías necesarias
+## ¿Qué razas fueron incluidas en el entrenamiento?
 
-### Pytorch
+Las razas que fueron incluidas en el entrenamiento del modelo  fueron:
 
-- Seguir las [instrucciones oficiales](https://pytorch.org/get-started/locally/) seleccionando el sistema operativo correspondiente.
+|Nro|Raza|
+|--------|---------|
+|1|Akita|
+|2|Beagle|
+|3|Border Collie|
+|4|Boyero de Berna|
+|5|Bulldog|
+|6|Chihuahua|
+|7|Chow Chow|
+|8|Coker Spaniel|
+|9|Daschund|
+|10|Dalmata|
+|11|Doberman|
+|12|Dogo argentino|
+|13|Fox Terrier|
+|14|Galgo|
+|15|Golden Retriever|
+|16|Gran Danes|
+|17|Labrador Retriever|
+|18|Pastor Alemán|
+|19|Pastor Blanco suizo|
+|20|Pitbull|
+|21|Poddle|
+|22|Pug|
+|23|Rottweiler|
+|24|Samoyedo|
+|25|Schnauzer|
+|26|Yorkshire Terrier|
 
-### fastai [(instrucciones)](https://docs.fast.ai/install.html)
-```
-pip install fastai
-```
-
-### Flask [(instrucciones)](https://flask.palletsprojects.com/en/1.1.x/installation/)
-```
-pip install Flask
-```
-### Si se desea modificar aún más la aplicación web, se recomienda usar un [ambiente virtual](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) (además es una muy buena práctica al momento de programar en Python)
-
-## Construcción del Modelo de Deep Learning
-
-- Se deben seguir las instrucciones explicadas en este [notebook](https://github.com/aastroza/clase_productodatos_2019_udd/blob/master/notebooks/ejemplo_clasificador_fastai.ipynb).
-
-## Modificación de la aplicación web
-
-### Poner el modelo (archivo .pkl) en la carpeta `models` 
-
-### Cambiar los nombres de las clases
-
-- Abrir "app.py" y buscar la variable llamada `classes` y cambiar su contenido con las clases del clasificador propio.
-
-### Modificaciones de la Interfaz
-
-- Modificar los archivos en los directorios `templates` y `static`.
-
-- `index.html` maneja la parte gráfica y `main.js` el comportamiento.
-
-
-
-## Conexión con Heroku
-
-- El primer paso es crear una aplicación y darle un nombre.
-
-- En "Deployment Method" escoger "Connect to Github" y seguir las instrucciones.
-
-- Una vez que esté listo, aparecerá un link para revisar la aplicacion en el navegador, como este: https://facemask-udd.herokuapp.com/
+Para mayor información sobre las fotografías que fueron incluidas dentro del entrenamiento del modelo ver acá: [Dataset](https://drive.google.com/drive/folders/1ZD4AN8gKVbvqeBGU-edSKkTIVGuTcdRy?usp=sharing)
 
 ## Créditos
 
