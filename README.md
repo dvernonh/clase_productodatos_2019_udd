@@ -13,6 +13,8 @@ Para ingresar a la app solamente debes ingresa al siguiente link: [clasificador_
 
 ## ¿Qué razas fueron incluidas en el entrenamiento?
 
+Para entrenar el modelo, se generó un dataset de imágenes de distintas razas de perro, las cuales fueron descargadas desde google images.
+
 Las razas que fueron incluidas en el entrenamiento del modelo  fueron:
 
 |Nro|Raza|
@@ -48,4 +50,4 @@ Para mayor información sobre las fotografías que fueron incluidas dentro del e
 
 ## Créditos
 
-- La construcción del modelo está basada en las clases de [Francisco Ingham y Jeremy Howard](https://github.com/fastai/course-v3/blob/master/nbs/dl1/lesson2-download.ipynb). La aplicacion web está inspirada en el trabajo de [Shankar Jha](https://github.com/shankarj67/Water-classifier-fastai).
+- La construcción del modelo está basada en las clases de Alonso Astroza de producto de datos del magister de Data Science, Universidad del desarrollo.
